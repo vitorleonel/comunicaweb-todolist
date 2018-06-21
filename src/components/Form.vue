@@ -19,7 +19,7 @@ export default {
         return;
       }
 
-      this.$emit('addTask', this.task)
+      this.$emit('addTask', this.task);
       this.task = '';
     }
   },

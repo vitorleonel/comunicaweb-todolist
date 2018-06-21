@@ -3,7 +3,7 @@
 
     <div class="container">
 
-      <Header :totalTasks="this.tasks.length" />
+      <Header :totalTasks="tasks.length" />
 
       <Form @addTask="addTask" />
 
@@ -70,7 +70,11 @@ export default {
         return;
       }
 
-      this.tasks = JSON.parse(window.localStorage.getItem('tasks'));
+      const localTasks = window.localStorage.getItem('tasks');
+
+      if(localTasks !== 'null') {
+        this.tasks = JSON.parse(localTasks);
+      }
     },
 
     saveToStorage() {
