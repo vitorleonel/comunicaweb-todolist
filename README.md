@@ -1,4 +1,4 @@
-# comunicaweb-todolist
+# ComunicaWeb | TodoList
 
 > A Vue.js project
 
