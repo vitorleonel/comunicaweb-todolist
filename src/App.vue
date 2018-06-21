@@ -107,10 +107,14 @@ export default {
   .wrapper {
     display: flex;
     justify-content: center;
+    padding: 1.5rem;
 
     .container {
-      width: 50vw;
-      padding: 5rem;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        max-width: 50vw;
+      }
     }
   }
 </style>
